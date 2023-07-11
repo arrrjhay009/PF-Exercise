@@ -1,5 +1,11 @@
 body {
-    background-color: #9DB2BF;
+    ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .navLogo {
@@ -8,7 +14,24 @@ body {
 }
 
 .nav {
+    display: inline;
     font-family: 'Poppins', sans-serif;
     list-style: none;
-    display: flex;
+}
+
+.header {
+    background-color: #27374D;
+    opacity: 60%;
+    color: white;
+}
+
+ul {
+    float: right;
+}
+
+h1 {
+    background-color: #526D82;
+    display: inline-block;
+    height: 100px;
+    width: 50;
 }
