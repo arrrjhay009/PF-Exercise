@@ -1,27 +1,17 @@
-/* 
-CSS SPECIFICITY > WHICH CODE WILL BE GIVEN IMPORTANCE
-1. ORDER
-2. Embedded vs External Stylesheet (Embedded wins)
-*/
 
-*{
+/* UNIVERSAL SELECTOR */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*ELEMENT SELECTORS - GENERAL STYLINGS*/
+/* ELEMENT SELECTORS - GENERAL STYLINGS */
 
-body{   
-    /* background-color: orangered; */
+body {
     font-family: 'Poppins', sans-serif;
 } 
-
-header{
-    /* background-color: green; */
-}
-
-
 
 h1{
     /* display: inline-block; */
