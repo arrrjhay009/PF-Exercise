@@ -13,23 +13,6 @@ body {
     font-family: 'Poppins', sans-serif;
 } 
 
-h1{
-    /* display: inline-block; */
-    /* background-color: pink;
-    color: red;
-    padding: 20px;   
-    height: 100px;
-    width: 200px; */
-}
-
-ul{
-    /* background-color: brown; */
-}
-
-li {
-    /* background-color: lightgoldenrodyellow; */
-}
-
 a {
     text-decoration: none;
 }
