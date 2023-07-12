@@ -79,6 +79,7 @@ general sibling
     align-items: center;
     justify-content: space-between;
     padding: 3% 7%;
+    background-color: rgba(36, 35, 35, 0.376);
 }
 
 .header__ul {
