@@ -125,3 +125,25 @@ general sibling
     font-size: 30px;
     font-weight: 200;
 }
+
+.about {
+    height: 75vh;
+    background-color: gray;
+    color: white;
+}
+
+.about__headings {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.about__heading--h2 {
+    font-size: 60px;
+    padding-top: 5rem;
+
+}
+
+.about__heading--p {
+    text-align: center;
+}
