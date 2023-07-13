@@ -34,7 +34,7 @@ general sibling
 .header{
     position: relative;
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.52), rgba(48, 46, 51, 0.73)), url('https://github.com/KodeGoBootcamp-Projects/PF-Exercise_Images/blob/main/mine.jpg?raw=true');
+    background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.52), rgba(48, 46, 51, 0.73)), url('../images/mine.jpg');
     background-size: cover;
   }
   
@@ -121,4 +121,54 @@ general sibling
 
 .about__heading--p {
     text-align: center;
+}
+
+
+
+/******************************************** ABOUT SECTION ******************************************/
+
+.portfolio {
+    height: 100vh;
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.portfolio__heading--h2 {
+    margin-top: 3%;
+    font-size: 60px;
+}
+
+.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    padding: 5%;
+    margin-top: 50px;
+}
+
+.portfolio__img {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio__img img{
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    display: block;
+    border-radius: 10px;
+}
+
+.portfolio__heading--p {
+    margin-bottom: 60px;
+}
+
+.portfolio__btn {
+    background-color: #085c3c;
+    color: black;
+    height: 50px;
+    width: 250px;
+    padding: 1% 1%;
+    border-radius: 10px;
 }
