@@ -45,7 +45,7 @@ general sibling
   }
   
 .header__brand-span {
-      color: black;
+      color: gray;
   }
 
 .header__nav {
@@ -128,7 +128,7 @@ general sibling
 /******************************************** ABOUT SECTION ******************************************/
 
 .portfolio {
-    height: 100vh;
+    height: 130vh;
     padding: 50px;
     align-items: center;
     text-align: center;
@@ -171,4 +171,15 @@ general sibling
     width: 250px;
     padding: 1% 1%;
     border-radius: 10px;
+}
+
+
+/******************************************** ABOUT SECTION ******************************************/
+
+.contact {
+    height: 130vh;
+    color: #fff;
+    background-color: black;
+    padding: 5%;
+    
 }
