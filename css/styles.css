@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ELEMENT SELECTORS - GENERAL STYLINGS */
@@ -31,21 +32,21 @@ general sibling
 /******************************************** HEADER SECTION ******************************************/
 
 
-.header{
+.header {
     position: relative;
     height: 100vh;
     background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.52), rgba(48, 46, 51, 0.73)), url('../images/mine.jpg');
     background-size: cover;
   }
   
-.header__brand {
+.header__brand.navbar-brand {
       color: #fff;
-      font-size: 50px;
+      font-size: 40px;
       font-weight: 800; 
   }
   
 .header__brand-span {
-      color: gray;
+      color: #C8DC64;
   }
 
 .header__nav {
@@ -56,12 +57,9 @@ general sibling
     background-color: rgba(36, 35, 35, 0.548);
 }
 
-
 .header__nav ul li {
-    /* background-color: #394867; */
     display: inline-block;
     margin: 10px 20px;
-    /* padding-right: 35px; */
 }
 
 .header__nav ul li a {
@@ -71,30 +69,39 @@ general sibling
 
 }
 
-/* .header__nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 50px;
-    font-weight: 800;
+.header__image-sm {
+    display: none;
+}
 
-} */
-
-.header__headings{
+.header__heading-desktop{
    position: absolute;
-    /* background-color: green; */
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
 }
 
+.header__heading-mobile {
+    display: none;
+}
+
 .header__headings-h1 {
     font-size: 60px;
+    font-weight: 700;
 }
 
 .header__headings-h2 {
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 400;
+    color: #C8DC64;
+}
+
+.nav-item a {
+    text-decoration: none;
+}
+
+.container-fluid a {
+    padding-left: 15px;
 }
 
 
@@ -102,9 +109,13 @@ general sibling
 /******************************************** ABOUT SECTION ******************************************/
 
 .about {
-    height: 60vh;
+    height: 100vh;
     background-color: rgb(36, 35, 35);
     color: white;
+}
+
+.about__img{
+    display: none;
 }
 
 .about__headings {
@@ -116,6 +127,7 @@ general sibling
 .about__heading--h2 {
     font-size: 60px;
     padding-top: 5rem;
+    font-weight: 700;
 
 }
 
@@ -123,12 +135,45 @@ general sibling
     text-align: center;
 }
 
+.about__skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5%;
+    margin: auto;
+}
+
+.about__skills-h3 {
+    padding-right: 5%;
+}
+
+.about__skills-h3-1{
+    border-bottom: 3px solid #C8DC64;
+    width: 5%;
+    margin-right: 50px;
+}
+
+.about__content{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 4%;
+    width: 50%;
+    padding-left: 2%;
+    text-align: left;
+}
+
+.about__content-h3{
+    color: #C8DC64;
+    font-weight: 700;
+}
 
 
-/******************************************** ABOUT SECTION ******************************************/
+
+/******************************************** PORTFOLIO SECTION ******************************************/
 
 .portfolio {
-    height: 130vh;
+    height: 100vh;
     padding: 50px;
     align-items: center;
     text-align: center;
@@ -137,14 +182,17 @@ general sibling
 .portfolio__heading--h2 {
     margin-top: 3%;
     font-size: 60px;
+    font-weight: 700;
+
 }
 
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    padding: 5%;
-    margin-top: 50px;
+    /* grid-gap: 40px; */
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .portfolio__img {
@@ -154,82 +202,309 @@ general sibling
 
 .portfolio__img img{
     object-fit: cover;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     display: block;
     border-radius: 10px;
 }
 
-.portfolio__heading--p {
+/* .portfolio__heading--p {
     margin-bottom: 60px;
-}
+} */
 
 .portfolio__btn {
-    background-color: gray;
+    text-decoration: none;
+    background-color: #C8DC64;
     color: black;
     height: 50px;
-    width: 250px;
-    padding: 1% 1%;
+    width: 350px;
+    padding: 1% 3%;
     border-radius: 10px;
 }
 
 
-/******************************************** ABOUT SECTION ******************************************/
+/******************************************** CONTACT SECTION ******************************************/
 
 .contact {
     height: 100vh;
     color: #fff;
-    background-color: black;
+    background-color: #000;
     padding: 5%;
 }
 
+.contact__row {
+    display: flex;
+}
+
 .contact__row-left {
-    flex-basis: 35%;
+    flex-basis: 40%;
+}
+
+.contact__heading--h2 {
+    font-size: 60px;
+    font-weight: 700;
 }
 
 .contact__row-left p {
     margin-top: 30px;
 }
 
-.contact__row-left p i {
-    color: #fff;
-    margin-right: 15px;
+.contact__left--icons {
+    margin-top: 25px;
 }
 
-.contact__left--icons {
-    margin-top: 30px;
-}
-.contact__left--icons a {
+.contact__row-left p i {
     color: #fff;
-    font-size: 50px;
+    margin-right: 20px;
+}
+
+.contact__left--icons a {
+    text-decoration: none;
+    font-size: 30px;
     margin-right: 15px;
+    color: #fff;
 }
 
 .contact__btn {
     display: block;
     margin: 50px auto;
-    border: 1px solid #fff;
+    border: 1px solid #C8DC64;
     padding: 14px 50px;
-    border-radius: 10px;
+    border-radius: 6px;
+    text-decoration: none;
     color: #fff;
     width: fit-content;
 }
 
 .contact__btn:hover {
-    background-color: #fff;
+    background-color: #C8DC64;
     color: #000;
+
 }
 
 .contact__btn.contact__btn-1 {
     display: inline-block;
+}
+
+.contact__row-right {
+    flex-basis: 60%;
+}
+
+.contact__row-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    outline: none;
+    background: #312D2D;
+    border: 6px;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+form input:hover,
+form textarea:hover {
+    outline-style: solid;
+    outline-color: #fff;
+}
+
+.contact__btn.contact__btn-2 {
+    display: inline-block;
+    background-color: #000;
+    font-size: 18px;
+    margin:  0;
+}
+
+.contact__btn-2:hover {
+    background-color: #C8DC64;
+    color: #000;
+}
+
+
+/******************************************** FOOTER SECTION ******************************************/
+
+footer {
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    padding: 1.5% 0;
+    background-color: #C8DC64;
+    font-weight: 400;
+    color: #000;
 
 }
 
-.contact__row {
-    display: flex;
-    flex-direction: row;
+
+/******************************************** MEDIA QUERIES ******************************************/
+
+/********************** HEADER SECTION **********************/
+@media only screen and (max-width: 600px) {
+    .header {
+        background-image: none;
+        background-color: #000;
+    }
+
+    .header__image-sm {
+        display: block;
+    }
+
+    .header__image-sm img {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .header__heading-desktop {
+        display: none;
+    }
+
+    .header__heading-mobile {
+        display: block;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        width: 300px;
+        text-align: center;
+    }
+
+    .header__heading--h1{
+        font-size: 35px;
+    }
+
+    .header__heading--h2 {
+        font-size: 20px;
+    }
+
+    .header__heading--span1 {
+        color: #C8DC64;
+
+    }
+
+    .header__heading--span2 {
+        display: block;
+        padding-top: 25px;
+    }
+
 }
 
-.contact__heading--h2 {
-    font-size: 60px;
+/********************** ABOUT SECTION **********************/
+@media only screen and (max-width: 600px) {
+    .about {
+        height: 100vh;
+        padding-top: 10%;
+        
+    }
+
+    .about__img {
+        display: block;
+        text-align: center;
+        padding: 10% 0% 0% 0;
+    }
+
+    .about__img img {
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .about__img img:hover {
+        transform: translate(-5px, -10px);
+        cursor: pointer;
+        box-shadow: 13px 10px 5px 0px #C8DC64;
+    }
+
+    .about__heading--h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .about__heading {
+        width: 80%;
+    }
+
+    .about__heading--paragraph {
+        text-align: left;
+    }
+
+    .about__content {
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 10%;
+        width: 87%;
+    
+
+    }
+    
 }
+
+/********************** PORTFOLIO SECTION **********************/
+@media only screen and (max-width: 600px) {
+    .portfolio {
+        height: 100vh;
+    }
+
+    .portfolio__heading--h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .portfolio__img img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 5%;
+
+    }
+
+    .portfolio__img:last-child {
+        margin-bottom: 10%;
+    }
+
+    .portfolio__btn { 
+        padding: 5% 15%;
+
+    }
+}
+
+/********************** CONTACT SECTION **********************/
+@media only screen and (max-width: 600px) {
+
+    .contact {
+        height: 120vh;
+    }
+
+    .contact__row {
+        flex-direction: column;
+    }
+
+    .contact__heading--h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+
+    .contact__btn.contact__btn-2 {
+        margin: 10% 0;
+    }
+
+
+}
+
+/********************** FOOTER SECTION **********************/
+@media only screen and (max-width: 600px) {
+    footer p {
+        padding: 5% 0 0;
+    }
+}
+

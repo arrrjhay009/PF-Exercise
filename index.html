@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/styles.css"> 
 
     <!-- EXTERNAL STYLES RESOURCES -->
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap" rel="stylesheet">
@@ -33,20 +38,43 @@
 
     <!-- Header Section -->
 
-    <header>
+    <header id="home-section">
         <div class="header">
-            <nav class="header__nav">
-                <a href="#" class="header__brand">PORT<span class="header__brand-span">FOLIO</span>&dot;</a>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#" target="_blank" rel="noopener">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <nav class="fixed-top header__nav navbar navbar-expand-lg bg-dark navbar-dark"
+                style="background-color:rgba(36, 35, 35, 0.774) !important;">
+                <div class="container-fluid">
+                    <a href="#home-section" class="header__brand navbar-brand">PORT<span class="header__brand-span">FOLIO</span>&dot;</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> 
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="text-align: right;">
+                            <li class="nav-item"><a href="#home-section">Home</a></li>
+                            <li class="nav-item"><a href="#about-section">About</a></li>
+                            <li class="nav-item"><a href="#portfolio-section" rel="noopener">Portfolio</a></li>
+                            <li class="nav-item"><a href="#contact-section">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            <div class="header__headings">
+
+            <div class="header__image-sm">
+                <img src="images/profile.jpg" alt="header image small" loading="lazy">
+            </div>
+            
+            <!-- Heading Text for Desktop -->
+            <div class="header__heading-desktop">
                 <h1 class="header__headings-h1">RYAN JAY STA. MARIA</h1>
                 <h2 class="header__headings-h2">Freelance Front-End Web Developer</h2>
+            </div>
+
+            <!-- Heading Text for Mobile -->
+            <div class="header__heading-mobile">
+                <h1 class="header__heading--h1">WEB DEVELOPER</h1>
+                <h2 class="header__heading--h2">Hi, I am <span class="header__heading--span1">Ryan Jay Sta. Maria</span>
+                    
+                    <span class="header__heading--span2">Let's Connect</span>
+                </h2>
             </div>
 
 
@@ -57,13 +85,24 @@
 
     <!-- About Section -->
 
-    <section>
+    <section id="about-section">
         <div class="about">
+            <div class="about__img">
+                <img src="images/profileBody.jpg" alt="about mobile image" loading="lazy">
+            </div>
             <div class="about__headings">
                 <h2 class="about__heading--h2">ABOUT ME</h2>
-                <p class="about__heading--p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi soluta odio blanditiis debitis labore eaque esse aperiam illo, non praesentium rerum dolore tempore ipsum assumenda nisi ea. Error, ex. Unde.
-                    Nam aut delectus velit vero dolor voluptate vel, minima obcaecati cumque laudantium inventore, aliquam quidem corporis error sit. Veritatis, porro.
+                <p class="about__heading--p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi soluta odio blanditiis debitis labore eaque esse aperiam illo, non praesentium rerum dolore tempore ipsum assumenda nisi ea. 
                 </p>
+            </div>
+            <div class="about__skills">
+                <h3 class="about__skills-h3 about__skills-h3-1">Skills</h3>
+                <h3 class="about__skills-h3 about__skills-h3-2">Experience</h3>
+                <h3 class="about__skills-h3 about__skills-h3-3">Education</h3>
+            </div>
+            <div class="about__content">
+                <h3 class="about__content-h3">HTML & CSS</h3>
+                <p class="about__paragraph">Build a responsive websites with HTML & CSS</p>
             </div>
         </div>
     </section>
@@ -71,7 +110,7 @@
 
     <!-- Portfolio Section -->
 
-    <section>
+    <section id="portfolio-section">
         <div class="portfolio">
             <h2 class="portfolio__heading--h2">MY PORTFOLIO</h2>
                 <div class="portfolio__container">
@@ -79,17 +118,17 @@
                     <div class="portfolio__img"><img src="https://github.com/KodeGoBootcamp-Projects/PF-Exercise_Images/blob/main/css.png?raw=true" alt="CSS3 Logo"></div>
                     <div class="portfolio__img"><img src="https://github.com/KodeGoBootcamp-Projects/PF-Exercise_Images/blob/main/java-script.png?raw=true" alt="JS Logo"></div>
                 </div>
-                <p class="portfolio__heading--p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi soluta odio blanditiis debitis labore eaque esse aperiam illo, non praesentium rerum dolore tempore ipsum assumenda nisi ea. Error, ex. Unde.
+                <!-- <p class="portfolio__heading--p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi soluta odio blanditiis debitis labore eaque esse aperiam illo, non praesentium rerum dolore tempore ipsum assumenda nisi ea. Error, ex. Unde.
                     Nam aut delectus velit vero dolor voluptate vel, minima obcaecati cumque laudantium inventore, aliquam quidem corporis error sit. Veritatis, porro. 
-                </p>
-                <a class="portfolio__btn" href="">See More</a>
+                </p> -->
+                <a class="portfolio__btn" href="#">See More</a>
         </div>
     </section>
 
 
     <!-- Contact Section -->
 
-    <section>
+    <section id="contact-section">
         <div class="contact">
             <div class="contact__container">
                 <div class="contact__row">
@@ -110,7 +149,7 @@
                             <input type="text" placeholder="Your Name">
                             <input type="email" placeholder="Your Email">
                             <textarea name="#" id="#" cols="30" rows="10" placeholder="Your Message"></textarea>
-
+                            <button type="submit" class="contact__btn contact__btn-2">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -121,7 +160,13 @@
 
     <!-- Footer Section -->
 
+    <footer>
+        <p>Copyright 2023 &copy; Ryan Jay Sta. Maria</p>
+    </footer>
 
+    <!--BOOTSTRAP SCRIPTS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 
 </body>
 
