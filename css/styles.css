@@ -165,7 +165,7 @@ general sibling
 }
 
 .portfolio__btn {
-    background-color: #085c3c;
+    background-color: gray;
     color: black;
     height: 50px;
     width: 250px;
@@ -181,5 +181,49 @@ general sibling
     color: #fff;
     background-color: black;
     padding: 5%;
-    
+}
+
+.contact__row-left {
+    flex-basis: 35%;
+}
+
+.contact__row-left p {
+    margin-top: 30px;
+}
+
+.contact__row-left p i {
+    color: #fff;
+}
+
+.contact__left--icons {
+    margin-top: 30px;
+}
+.contact__left--icons a {
+    color: #fff;
+    font-size: 50px;
+    margin-right: 15px;
+}
+
+.contact__btn {
+    display: block;
+    margin: 50px auto;
+    border: 1px solid #fff;
+    padding: 14px 50px;
+    border-radius: 10px;
+    color: #fff;
+    width: fit-content;
+}
+
+.contact__btn.contact__btn-1 {
+    display: inline-block;
+
+}
+
+.contact__row {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact__heading--h2 {
+    font-size: 60px;
 }
