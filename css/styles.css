@@ -177,7 +177,7 @@ general sibling
 /******************************************** ABOUT SECTION ******************************************/
 
 .contact {
-    height: 130vh;
+    height: 100vh;
     color: #fff;
     background-color: black;
     padding: 5%;
@@ -193,6 +193,7 @@ general sibling
 
 .contact__row-left p i {
     color: #fff;
+    margin-right: 15px;
 }
 
 .contact__left--icons {
@@ -212,6 +213,11 @@ general sibling
     border-radius: 10px;
     color: #fff;
     width: fit-content;
+}
+
+.contact__btn:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 .contact__btn.contact__btn-1 {
